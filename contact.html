@@ -1,0 +1,102 @@
+<html>
+    
+ 
+      <head>
+          <title>Contact</title>
+      
+     
+       <link href="assets/css/styles.css" rel="stylesheet" type="text/css"/>
+
+<div class="header">
+ 
+  welcome
+</div>
+
+<div id="navbar">
+  <a href="index.html">Home</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="contact.html">Contact</a>
+    
+    <img src="images/logo.png" alt="logo" style="float:left;width:17%;height:17%;">
+    
+</div>
+ </head>
+      <body>
+<div class="content">
+  <center> <h2>CONTACT ME:</h2>
+<br>
+
+       </center>
+<div class="container">
+  <form action="mailto:luisadorisf@icloud.com" method="post" enctype="multipart/form-data">
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">First Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Last Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    </div>
+  </div>
+  
+   <div class="row">
+    <div class="col-25">
+      <label for="email">Email:</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="email" name="email" placeholder="example@email.com">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="phone">Phone:</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="phone" name="phone" placeholder="999-999-9999">
+    </div>
+  </div>
+  
+  
+  <div class="row">
+    <div class="col-25">
+      <label for="subject">Message:</label>
+    </div>
+    <div class="col-75">
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    </div>
+  </div>
+  <div class="row">
+    <input type="submit" value="Submit">
+  </div>
+  </form>
+</div>
+
+
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+
+    
+</html>
